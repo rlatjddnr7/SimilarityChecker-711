@@ -6,13 +6,8 @@ public class Length {
         }
         int lStr;
         int sStr;
-        if(str1.length() > str2.length()) {
-            lStr = str1.length();
-            sStr = str2.length();
-        } else {
-            lStr = str2.length();
-            sStr = str1.length();
-        }
+        lStr = Integer.max(str1.length(), str2.length());
+        sStr = Integer.min(str1.length(), str2.length());
 
         if(lStr >= 2 * sStr) {
             return 0;
