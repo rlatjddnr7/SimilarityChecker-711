@@ -12,7 +12,7 @@ class LengthTest {
     }
 
     @Test
-    void compareLength() {
+    void compareTest() {
         assertEquals(60, length.compare("ASD", "DSA"));
         assertEquals(0, length.compare("A", "BB"));
         assertEquals(20, length.compare("ABB", "BAAAA"));
